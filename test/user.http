@@ -1,0 +1,18 @@
+POST http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Geovane",
+    "email": "geovane@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:8080/users/generate_token HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "geovane@gmail.com",
+    "password": "123456"
+}
